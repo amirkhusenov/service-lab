@@ -136,7 +136,7 @@ a {
 
     .start-page-right-gradient {
         top: 1290px;
-        right: -585px;
+        right: -470px;
     }
 
 
@@ -152,11 +152,11 @@ a {
 
         .hero-content {
             padding: 66px 72px 55px 72px;
-            background: url('/assets/hero.png') no-repeat -104px -140px;
+            background: url('/assets/hero.png') no-repeat center -120px / 1280px auto;
         }
 
         .hero-content-bg {
-            background: url('/assets/hero-bg.png') no-repeat 0 0;
+            background: url('/assets/hero-bg.png') no-repeat center 0 / 1230px auto;
         }
 
         padding-top: 86px;
@@ -2269,11 +2269,10 @@ footer {
         border-radius: 0;
         background:
             radial-gradient(ellipse 70% 90px at 50% 100%, rgba(151, 36, 255, 0.14) 0%, rgba(151, 36, 255, 0.06) 48%, rgba(151, 36, 255, 0) 86%),
-            radial-gradient(ellipse 39px 70px at 50% 100%, rgba(147, 51, 234, 0.2) 0%, rgba(147, 51, 234, 0) 100%),
             url('/assets/hero.png');
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-position: center bottom, center bottom, 80% 100%;
-        background-size: 130% 135px, auto, 250%;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center bottom, 80% 100%;
+        background-size: 130% 135px, 250%;
         box-sizing: border-box;
     }
 
