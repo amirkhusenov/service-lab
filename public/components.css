@@ -1,0 +1,106 @@
+.button {
+    border: none;
+    --padding-y: 10px;
+    --padding-x: 13px;
+    --border-size: 2px;
+    --padding-y-with-border: calc(var(--padding-y) - var(--border-size));
+    --padding-x-with-border: calc(var(--padding-x) - var(--border-size));
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+    padding: var(--padding-y-with-border) var(--padding-x-with-border);
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+
+    --box-shadow: 0 2px 10px -2px rgba(var(--color-accent-rgb), 0.4);
+
+
+    &.button {
+        font-size: 16px;
+        letter-spacing: 0.04em;
+    }
+
+    &.primary {
+        background: var(--color-accent);
+        display: inline-block;
+        border: 2px solid var(--color-accent);
+
+        &:hover {
+            transform: translateY(-6px);
+            background: var(--color-accent-hover);
+            border-color: var(--color-accent-hover);
+            box-shadow: var(--box-shadow);
+        }
+
+        &:active {
+            background: var(--color-accent-pressed);
+            border-color: var(--color-accent-pressed);
+            transform: translateY(0);
+        }
+    }
+
+    &.secondary {
+        padding: var(--padding-y-with-border) var(--padding-x-with-border);
+
+        &.large {
+            padding: var(--padding-y-large-with-border) var(--padding-x-large-with-border);
+        }
+
+        border: var(--border-size) solid var(--color-accent);
+        box-sizing: border-box;
+
+        &:hover {
+            border-color: var(--color-accent-hover);
+            color: var(--color-accent-hover);
+            box-shadow: var(--box-shadow);
+        }
+
+        &:active {
+            color: var(--color-accent-pressed);
+            border-color: var(--color-accent-pressed);
+            background: #000;
+            transform: translateY(0);
+        }
+    }
+
+    &.tertiary {
+        background: #fff;
+        color: var(--color-accent);
+
+        &:hover {
+            color: var(--color-accent-hover);
+            transform: translateY(-6px);
+            box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+            color: var(--color-accent-pressed);
+            transform: none;
+            box-shadow: none;
+        }
+    }
+
+    &.ghost {
+        border: none;
+        color: #fff;
+
+        &:hover {
+            color: var(--color-accent);
+        }
+
+        &:active {
+            color: var(--color-accent-pressed);
+        }
+    }
+
+    &.without-transform {
+        &:hover {
+            transform: none;
+        }
+        &:active {
+            transform: none;
+        }
+    }
+
+}
