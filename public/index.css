@@ -2008,10 +2008,13 @@ footer {
         line-height: 38px;
     }
 
-    .about__cases__img,
-    .cases__result__img {
+    .about__cases__img {
         height: auto;
         aspect-ratio: 16 / 10;
+    }
+
+    .cases__result__img {
+        display: none;
     }
 
     .cases__result__border {
@@ -2051,9 +2054,8 @@ footer {
     }
 
     .other__top .button {
-        order: 3;
-        margin-top: 24px;
-        align-self: stretch;
+        display: none;
+
     }
 
     .contacts__contacts {
