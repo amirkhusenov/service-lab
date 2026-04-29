@@ -76,7 +76,9 @@ function RouteComponent() {
               Оцифровали топологию склада. Система строит для кладовщиков кратчайшие маршруты сборки заказов в мобильном
               приложении. Это позволило сократить лишний «пробег» персонала на 30%.
             </p>
-            <h3>Контроль в реальном времени <span className="solution-subline">(Dashboard)</span></h3>
+            <h3>
+              Контроль в реальном времени <span className="solution-subline">(Dashboard)</span>
+            </h3>
             <p>
               Для владельца бизнеса создан дашборд с ключевыми метриками: стоимость замороженного капитала, динамика
               отгрузок и критические остатки. Больше не нужно ждать отчетов от бухгалтерии - всё видно в один клик.
@@ -116,6 +118,11 @@ function RouteComponent() {
           </div>
           <div className="cases__result__inner">
             <div className="cases__result__inner__block">
+              <div className="cases__result__img">
+                <img src="/assets/images/cases__result__img.png" alt="" />
+              </div>
+            </div>
+            <div className="cases__result__inner__block">
               <p>
                 «До внедрения StockRadar мы работали в режиме постоянного тушения пожаров: то товар внезапно закончился,
                 то склад затоварен тем, что не продается. Команда Service Lab. не просто написала софт, а глубоко
@@ -141,6 +148,9 @@ function RouteComponent() {
         <div className="container">
           <div className="other__top">
             <h2 className="other__title">Похожие кейсы</h2>
+            <Link to={"/cases"} search={{ searchCaseFilters: [] }} className="button ghost">
+              Смотреть все
+            </Link>
           </div>
           <div className="other__wrap">
             <CaseList cases={cases.slice(0, 3)} />
